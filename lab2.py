@@ -5,7 +5,6 @@ def display_main_menu():
     calc_average_temperature(num_list)
     find_min_max(sorted_list)
 
-
 def get_user_input():
     x = input()
     numbers_list = list(map(float, x.split(", ")))
@@ -18,10 +17,11 @@ def calc_average_temperature(sorted_list):
     return average
     
 def find_min_max(sorted_list):
-    print("find_min_max")
+    print("Min. = " + sorted_list[0])
 
-def sort_temperature(temperature_list):
-    print("sort_temperature")
+def sort_temperature(num_list):
+    sorted_list = sorted(num_list)
+    return sorted_list
 
 def calc_median_temperature():
     print("calc_median_temperature")
